@@ -2,7 +2,7 @@
 
 JiwaiLaconicaProxy is a web server that give you a [Laconica API](http://laconi.ca/trac/wiki/TwitterCompatibleAPI) for accessing the [Jiwai.de](http://jiwai.de) data.
 
-The Proxy make you can benefit from the great deal of [Laconica Apps](http://laconi.ca/trac/wiki/Apps).
+The proxy makes you benefit from the great deal of [Laconica Apps](http://laconi.ca/trac/wiki/Apps).
 
 ## What does it look like
 
