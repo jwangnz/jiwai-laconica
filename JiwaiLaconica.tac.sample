@@ -1,0 +1,16 @@
+import sys
+sys.path.append('lib')
+
+import JiwaiLaconicaProxy
+
+from twisted.python import log
+from twisted.internet import reactor
+from twisted.web import server
+from twisted.application import internet, service
+
+application = service.Application('JiwaiLaconicaProxy') 
+
+site = server.Site(JiwaiLaconicaProxy.Resource('api.jiwai.de', 80, ''))
+server = internet.TCPServer(80, site)
+server.setServiceParent(application)
+ 
