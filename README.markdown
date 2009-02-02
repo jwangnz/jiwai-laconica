@@ -8,7 +8,7 @@ The proxy makes you benefit from the great deal of [Laconica Apps](http://laconi
 
 I'm running a JiwaiLaconicaProxy at jiwai.geowhy.org. 
 
-Here are the instructions how to add a laconi.ca account to twhirl using the proxy hosted at jiwai.geowhy.org, taken from [twhirl blog](http://blog.twhirl.org/2008/09/12/twhirl-preview-for-laconica-sites/):
+Here are the instructions how to add a jiwai.de account to twhirl using the proxy hosted at jiwai.geowhy.org, taken from [twhirl blog](http://blog.twhirl.org/2008/09/12/twhirl-preview-for-laconica-sites/):
 
 * open the accounts dialog (click on the top left hand twhirl icon in a twhirl window)
 * select "laconi.ca" from the drop-down list at the bottom left hand corner
