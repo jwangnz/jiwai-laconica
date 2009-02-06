@@ -38,10 +38,12 @@ class Resource(proxy.ReverseProxyResource):
         return Resource(self.host, self.port, self.path + '/' + urlquote(path, safe=""))
 
     def render(self, request):
-        match = re.search('^\/([^\/]+)\/?$', request.path)
-        if match:
-            log.msg("match")
-            request.redirect("http://jiwai.de/%s/" % match.group(1))
+        log.msg(request.path)
+        if request.path.find('/api') != 0:
+            redirect = "http://jiwai.de%s" % request.path
+            redirect = redirect.replace('/notice/', '/statuses/')
+            log.msg(redirect)
+            request.redirect(redirect)
             return ""
         else:
             request.setHost(self.host, self.port)
